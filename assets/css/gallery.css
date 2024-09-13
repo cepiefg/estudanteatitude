@@ -67,8 +67,9 @@
 }
 .top ul li img
 {
-	width: 100%;
+
 	height: auto;
+	padding: 2px;
 	overflow: hidden;
 }
 .lightbox
@@ -86,8 +87,8 @@
 }
 .lightbox img
 {
-	max-width: 90%;
-	max-height: 80%;
+	max-width: 50%;
+
 	position: relative;
 	top: -100%;
 	/* Transition */
