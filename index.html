@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Estudantes de Atitude</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <script>
+      $(function() {
+  $(".img-w").each(function() {
+    $(this).wrap("<div class='img-c'></div>")
+    let imgSrc = $(this).find("img").attr("src");
+     $(this).css('background-image', 'url(' + imgSrc + ')');
+  })
+            
+  
+  $(".img-c").click(function() {
+    let w = $(this).outerWidth()
+    let h = $(this).outerHeight()
+    let x = $(this).offset().left
+    let y = $(this).offset().top
+    
+    
+    $(".active").not($(this)).remove()
+    let copy = $(this).clone();
+    copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+    $(".active").css('top', y - 8);
+    $(".active").css('left', x - 8);
+    
+      setTimeout(function() {
+    copy.addClass("positioned")
+  }, 0)
+    
+  }) 
+  
+  
+
+  
+})
+
+$(document).on("click", ".img-c.active", function() {
+  let copy = $(this)
+  copy.removeClass("positioned active").addClass("postactive")
+  setTimeout(function() {
+    copy.remove();
+  }, 500)
+})
+    </script>
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>Estudantes<span> de Atitude</span></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
+              <li class="scroll-to-section"><a href="#about">Quem somos</a></li>
+              <li class="scroll-to-section"><a href="#services">Estudante de Atitude</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Objetivo</a></li>
+              <li class="scroll-to-section"><a href="#blog">Ações</a></li> 
+              <li class="scroll-to-section"><a href="#contact">Equipes</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contato</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h6>Bem-Vindo!</h6>
+                <h2>Estudantes<em>de Atitude</em> &amp; <span>Equipe CEPI</span> </h2>
+                <p>Acompanhe todos nossos projetos e feitos:</p>
+                  <a rel="nofollow" href="https://www.instagram.com/_ea.cepidomveloso?igsh=MXE0N2ZsaHVwMXJwMw%3D%3D" target="_parent"> Veja no instagram</a>.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="gallery">
+                  <img src="assets/images/planta.jpeg">
+                  <img src="assets/images/praca.jpg">
+                  <img src="assets/images/ong.jpg">
+                  <img src="assets/images/parcerias.jpeg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/about-left-image.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Ensino</h4>
+                    <p>O CEPI Dom Veloso oferece Ensino Fundamental e Médio Técnico com cursos de Desenvolvimento Web e Cibersegurança. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Objetivo</h4>
+                    <p>A escola tem como objetivo melhorar o desempenho em avaliações como o ENEM, SAEB e IDEB. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Mercado de Trabalho</h4>
+                    <p>Ao final do ensino medio, o estudante ira receber um certificado de conclusão que possibilita sua entrada para o mercado de trabalho visando uma boa qualidade de vida.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>O PPP</h4>
+                    <p>O PPP da escola orienta suas ações, promovendo a participação da comunidade escolar e uma educação que abrange dimensões sociais, culturais e políticas. Ele visa melhorar a qualidade do ensino e preparar os alunos para a cidadania e o trabalho.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <img src="assets/images/geral.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Estudantes <em>de</em> Atitude</h2>
+            <p>O projeto Estudantes de Atitude, da Controladoria-Geral de Goiás em parceria com a Secretaria Estadual de Educação, promove cidadania e participação social nas escolas públicas. Com uma competição gamificada, alunos exercem práticas de transparência, controle social, voluntariado e prevenção à corrupção. O CEPI Dom Veloso participa com iniciativas que buscam melhorar o ambiente escolar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Objetivo</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Preservação</h4>
+                <p>Promovemos a preservação do meio ambiente.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/nome.jpg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Patrimônio publico</h4>
+                <p>Incentivamos a valorização e preservação do patrimônio público.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/praca.jpg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+      
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>Responsabilidade</h4>
+                <p>Desenvolvemos a responsabilidade social.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/ong.jpg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+         
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="hidden-content">
+                <h4>Reflexões</h4>
+                <p>Refletimos sobre temas como igualdade, integridade e educação em direitos humanos.</p>
+              </div>
+              <div class="showed-content">
+                <img src="assets/images/geral.jpg" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="blog" class="our-blog section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2><em>Ações</em></h2>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="top-dec">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="left-image">
+            <img src="assets/images/trilha.jpg" alt="Workspace Desktop">
+            <div class="info">
+              <br>
+              <br>  
+              <div class="inner-content">
+                <ul>
+                  <li><i class="fa fa-calendar0"></i></li>
+                  <li><i class="fa fa-users0"></i></li>
+                </ul>
+                <h4>Trilha ecológica</h4>
+                <p>Implantação da trilha ecológica na lateral da entrada dos estudantes.</p>
+                <div class="main-blue-button">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="right-list">
+            <ul>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar0"></i></span>
+                 <h4>Horta comunitária</h4>
+                  <p>Revitalização da horta comunitária com plantas medicinais na praça em frente à escola e ponto de coletivo (Melhoria do equipamento público).</p>
+                </div>
+                <div class="right-image">
+                  <img src="assets/images/planta.jpeg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar0"></i></span>
+                  <h4>Casa de vegetação</h4>
+                  <p>Revitalização/reforma da casa de vegetação.</p>
+                </div>
+                <div class="right-image">
+                  <img src="assets/images/blog-thumb-01.jpg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="left-content align-self-center">
+                  <span><i class="fa fa-calendar0"></i></span>
+                  <h4>Salas ambiente</h4>
+                  <p>O espaço Agro será organizado para aulas práticas e pesquisas, com a implantação de salas ao ar livre (Sala Verde), destinadas a aulas e descanso nos intervalos.</p>
+                </div>
+                <div class="right-image">
+                  <img src="assets/images/verde.jpg" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-2">
+    <div class="img-w">
+      <img src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop=" alt="" /></div>
+    <div class="img-w"><img src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop=" alt="" /></div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Caso haja interesse em patrocinio nos manda uma mensagem:</h2>
+            <p>Equipes de Desenvolvimento do site</p>
+            <p>Diogo Cavalcante: Tech Lead.
+            </p>
+            <p>Silas Lopes: Product Owner.
+            </p>
+            <p>Gabriel Fernandes: Desenvolvedor Front End.
+            </p>
+            <p>João Lucas: Desenvolvedor Front End.
+            </p>
+            <p>Iago: Desenvolvedor Front End.
+            </p>
+
+            <div class="phone-info">
+              <h4>Entre em contato: <span><i class="fa fa-phone"></i> <a href="#">64 9201-3821</a></span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Nome" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Sobrenome" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Seu Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Mensagem" required=""></textarea>  
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Enviar Mensagem</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2024 Estudante de Atitude Co. All Rights Reserved. 
+          
+          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+</body>
+</html>
